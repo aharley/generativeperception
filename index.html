@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61302010-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-61302010-3');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Perception Through Structured Generative Models @ ECCV 2020</title>
+    <meta name="description" content="ECCV 2020 workshop">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=1.4">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  </head>
+
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+	<div class="navbar-header">
+	  <a class="navbar-brand">PTSGM @ ECCV 2020</a>
+	  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	</div>
+	<div class="navbar-collapse collapse" id="navbar-main">
+	  <ul class="nav navbar-nav">
+	    <li>
+	      <img href='stanford_logo.png' />
+	      <!--  TODO: change logo  -->
+	    </li>
+	  </ul>
+	  <ul class="nav navbar-nav navbar-right">
+	    <li>
+	      <a href="#overview">Overview</a>
+	    </li>
+	    <!-- <li> -->
+	    <!--   <a href="#speakers">Speakers</a> -->
+	    <!-- </li> -->
+	    <li>
+	      <a href="#recordings">Recordings</a>
+	    </li>
+	    <li>
+	      <a href="#papers">Accepted papers</a>
+	    </li>
+	    <li>
+	      <a href="#submission">Call for Papers</a>
+	    </li>
+	    <li>
+	      <a href="#schedule">Schedule</a>
+	    </li>
+	    <li>
+	      <a href="#organizers">Organizers</a>
+	    </li>
+	    <!--        <li>-->
+	      <!--          <a href="#accepted">Accepted papers</a>-->
+	      <!--        </li>-->
+	  </ul>
+	</div>
+      </div>
+    </div> <!-- navbar done-->
+
+    <div style="padding-top:50px; padding-bottom:40px; background-color: #333; background-color: #890f3c; background-image: linear-gradient(141deg, #890f3c 0%, #504e90 51%, #333 75%); color:#fff">
+      <div class="container">
+	<div class="page-content">
+	  <div class="row">
+	    <div class="col-xs-12">
+	      <h1 style="color:#fff">Perception Through Structured Generative Models</h1>
+	      <h3 style="color:#fff">August 28, at ECCV 2020</h3>
+	    </div>
+	  </div>
+	  <!-- <hr /> -->
+	</div>
+      </div>
+    </div>
+    
+<div class="container" style="padding-top:30px">
+  <div class="page-content">
+    <div class="row">
+      <div class="col-xs-12">
+	<p><a class="anchor" id="overview"></a></p>
+	<h2>Overview</h2>
+	<p>The highly structured nature of the visual world has inspired many computer vision researchers to pursue an analysis-by-synthesis approach: to understand an image, one should be able to reproduce it with a model. A good model should also be able to extrapolate into unseen space or time: given a 2D or 2.5D image of a partially occluded object, what is the full 3D extent? Given a fragment of a video, how does the remainder play out? Generative models of images, video, and 3D data have made great strides in recent years, but their utility as causal or interpretable models has not always advanced in step. For example, while GANs can currently generate beautiful images, they do not necessarily learn a latent space of graphics-like or semantically-interpretable elements. In this workshop, we aim to explore how generative models can facilitate perception, and in particular, how to design and use structured generative models (of images, video, and 3D data) for computer vision inference applications.</p>
+      </div>
+    </div>
+    
+    <!-- <\!-- Important Dates -\-> -->
+    <!-- <p><a class="anchor" id="dates"></a></p> -->
+    <!-- <div class="row"> -->
+    <!--   <div class="col-xs-12 col-sm-12"> -->
+    <!-- 	<h2>Important Dates and Details</h2> -->
+    <!-- 	<ul> -->
+    <!-- 	  <li><b>Paper submission portal</b>: <a href="https://openreview.net/group?id=thecvf.com/ECCV/2020/Workshop/PTSGM">OpenReview</a></li> -->
+    <!-- 	  <li><b>Paper submission deadline</b>: August 20</li> -->
+    <!-- 	  <li><b>Workshop</b>: August 28</li> -->
+    <!-- 	</ul> -->
+    <!--   </div> -->
+    <!-- </div> -->
+
+    <hr />
+    
+    <!-- <\!-- Speakers -\-> -->
+    <!-- <p><a class="anchor" id="speakers"></a></p> -->
+    <!-- <div class="row"> -->
+    <!--   <div class="col-xs-12"> -->
+    <!-- 	<h2>Invited Speakers</h2> -->
+    <!--   </div> -->
+    <!-- </div> -->
+
+    <!-- <div class="row"> -->
+    <!--   <div class="col-xs-12"> -->
+    <!-- 	<div> -->
+    <!-- 	  <\!-- Peter Battaglia -\-> -->
+    <!-- 	  <div class="instructor"> -->
+    <!-- 	    <a href="https://scholar.google.com/citations?user=nQ7Ij30AAAAJ&hl=en/"> -->
+    <!-- 	      <div class="instructorphoto"><img src="images/battaglia.jpg"></div> -->
+    <!-- 	      <div>Peter Battaglia</div> -->
+    <!-- 	    </a> -->
+    <!-- 	    <div class="instructor-institute">DeepMind</div> -->
+    <!-- 	  </div> -->
+	  
+    <!-- 	  <\!-- Sanja Fidler -\-> -->
+    <!-- 	  <div class="instructor"> -->
+    <!-- 	    <a href="https://www.cs.utoronto.ca/~fidler/"> -->
+    <!-- 	      <div class="instructorphoto"><img src="images/fidler.jpg"></div> -->
+    <!-- 	      <div>Sanja Fidler</div> -->
+    <!-- 	    </a> -->
+    <!-- 	    <div class="instructor-institute">University of Toronto</div> -->
+    <!-- 	  </div> -->
+	  
+    <!-- 	  <\!-- J. Kevin O'Regan -\-> -->
+    <!-- 	  <div class="instructor"> -->
+    <!-- 	    <a href="http://nivea.psycho.univ-paris5.fr/"> -->
+    <!-- 	      <div class="instructorphoto"><img src="images/oregan.jpg"></div> -->
+    <!-- 	      <div>J. Kevin O'Regan</div> -->
+    <!-- 	    </a> -->
+    <!-- 	    <div class="instructor-institute">University Paris Descartes</div> -->
+    <!-- 	  </div> -->
+	  
+    <!-- 	  <\!-- Ruslan Salakhutdinov -\-> -->
+    <!-- 	  <div class="instructor"> -->
+    <!-- 	    <a href="https://cs.cmu.edu/~rsalakhu/"> -->
+    <!-- 	      <div class="instructorphoto"><img src="images/salakhutdinov.jpg"></div> -->
+    <!-- 	      <div>Ruslan Salakhutdinov</div> -->
+    <!-- 	    </a> -->
+    <!-- 	    <div class="instructor-institute">Carnegie Mellon University</div> -->
+    <!-- 	  </div> -->
+	  
+    <!-- 	  <\!-- Carl Vondrick -\-> -->
+    <!-- 	  <div class="instructor"> -->
+    <!-- 	    <a href="http://www.cs.columbia.edu/~vondrick/"> -->
+    <!-- 	      <div class="instructorphoto"><img src="images/vondrick.jpg"></div> -->
+    <!-- 	      <div>Carl Vondrick</div> -->
+    <!-- 	    </a> -->
+    <!-- 	    <div class="instructor-institute">Columbia University</div> -->
+    <!-- 	  </div> -->
+
+	  
+    <!-- 	  <\!-- Max Welling -\-> -->
+    <!-- 	  <div class="instructor"> -->
+    <!-- 	    <a href="https://staff.fnwi.uva.nl/m.welling/"> -->
+    <!-- 	      <div class="instructorphoto"><img src="images/welling.jpg"></div> -->
+    <!-- 	      <div>Max Welling</div> -->
+    <!-- 	    </a> -->
+    <!-- 	    <div class="instructor-institute">University of Amsterdam</div> -->
+    <!-- 	  </div> -->
+
+	  
+    <!-- 	</div> -->
+    <!--   </div> -->
+    <!-- </div> -->
+
+    <!-- <hr /> -->
+
+
+    <!-- Recordings -->
+    <p><a class="anchor" id="recordings"></a></p>
+    <div class="row">
+      <div class="col-xs-12">
+    	<h2>Recordings of Invited Talks</h2>
+      </div>
+    </div>
+    <div class="row slot-dark" style="padding-top:0; padding-bottom:0; margin-bottom:5px">
+      <div class="col-xs-12 col-sm-3" align="center">
+	<!-- opening -->
+	<div class="instructor">
+	    <div style="padding-top:20px; padding-bottom:20px">Opening remarks</div>
+	</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 bg-dark" align="center" style="padding:0">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/fMNBt0mhmYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div class="row slot" style="padding-top:0; padding-bottom:0; margin-bottom:5px">
+      <div class="col-xs-12 col-sm-3" align="center" style="padding:0">
+	<!-- Max Welling -->
+	<div class="instructor">
+	  <a href="https://staff.fnwi.uva.nl/m.welling/">
+	    <div class="instructorphoto"><img src="images/welling.jpg"></div>
+	    <div>Max Welling</div>
+	  </a>
+	  <div class="instructor-institute">University of Amsterdam</div>
+	</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 bg-dark" align="center" style="padding:0">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/VKUS-cqv--s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+    <div class="row slot-dark" style="padding-top:0; padding-bottom:0; margin-bottom:5px">
+      <div class="col-xs-12 col-sm-3" align="center">
+	<!-- J. Kevin O'Regan -->
+	<div class="instructor">
+	  <a href="http://nivea.psycho.univ-paris5.fr/">
+	    <div class="instructorphoto"><img src="images/oregan.jpg"></div>
+	    <div>J. Kevin O'Regan</div>
+	  </a>
+	  <div class="instructor-institute">University Paris Descartes</div>
+	</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 bg-dark" align="center" style="padding:0">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/e2QXatbCIJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div class="row slot" style="padding-top:0; padding-bottom:0; margin-bottom:5px">
+      <div class="col-xs-12 col-sm-3" align="center">
+	<!-- Peter Battaglia -->
+	<div class="instructor">
+	  <a href="https://scholar.google.com/citations?user=nQ7Ij30AAAAJ&hl=en/">
+	    <div class="instructorphoto"><img src="images/battaglia.jpg"></div>
+	    <div>Peter Battaglia</div>
+	  </a>
+	  <div class="instructor-institute">DeepMind</div>
+	</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 bg-dark" align="center" style="padding:0">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/f5XigvOes8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row slot-dark" style="padding-top:0; padding-bottom:0; margin-bottom:5px">
+      <div class="col-xs-12 col-sm-3" align="center">
+	<!-- Sanja Fidler -->
+	<div class="instructor">
+	  <a href="https://www.cs.utoronto.ca/~fidler/">
+	    <div class="instructorphoto"><img src="images/fidler.jpg"></div>
+	    <div>Sanja Fidler</div>
+	  </a>
+	  <div class="instructor-institute">University of Toronto</div>
+	</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 bg-dark" align="center" style="padding:0">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/eg_4iB20Dpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row slot" style="padding-top:0; padding-bottom:0; margin-bottom:5px">
+      <div class="col-xs-12 col-sm-3" align="center">
+	<!-- Ruslan Salakhutdinov -->
+	<div class="instructor">
+	  <a href="https://cs.cmu.edu/~rsalakhu/">
+	    <div class="instructorphoto"><img src="images/salakhutdinov.jpg"></div>
+	    <div>Ruslan Salakhutdinov</div>
+	  </a>
+	  <div class="instructor-institute">Carnegie Mellon University</div>
+	</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 bg-dark" align="center" style="padding:0">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/_uekF_2xpfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row slot-dark" style="padding-top:0; padding-bottom:0; margin-bottom:5px">
+      <div class="col-xs-12 col-sm-3" align="center">
+	<!-- Carl Vondrick -->
+	<div class="instructor">
+	  <a href="http://www.cs.columbia.edu/~vondrick/">
+	    <div class="instructorphoto"><img src="images/vondrick.jpg"></div>
+	    <div>Carl Vondrick</div>
+	  </a>
+	  <div class="instructor-institute">Columbia University</div>
+	</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 bg-dark" align="center" style="padding:0">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ViqNaOxRdKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Accepted papers -->
+    <p><a class="anchor" id="papers"></a></p>
+    <div class="row">
+      <div class="col-xs-12">
+	<h2>Accepted papers</h2>
+	<ul>
+	  <li>Vadim Sushko, Edgar Schönfeld, Dan Zhang, Juergen Gall, Bernt Schiele, Anna Khoreva. <em>"3D Noise and Adversarial Supervision Is All You Need for Multi-Modal Semantic Image Synthesis".</em> <a href="papers/3d_noise_and_adversarial_supervision_is_all_you_need_for_multi_modal_semantic_image_synthesis.pdf"><strong>PDF link</strong></a>. <!--<a href="https://us04web.zoom.us/j/8791760757?pwd=R1pob05RSUtwWnN4TnU5Znlra29JUT09"><strong>Zoom link for poster</strong></a>.-->
+	    <div align="center" style="padding:10px">
+	      <iframe width="560" height="315" src="https://www.youtube.com/embed/ekriE9H_YMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+	    
+	  </li>
+	  <li>Sarthak Bhagat, Vishaal Udandarao, Shagun Uppal, Saket Anand. <em>"DisCont: Self-Supervised Visual Attribute Disentanglement using Context Vectors".</em> <a href="papers/discont_self_supervised_visual_attribute_disentanglement_using_context_vectors.pdf"><strong>PDF link</strong></a>. <!--<a href="https://us04web.zoom.us/j/79248924928?pwd=aTZkdG10SUV4d1RsV2NGQ295b3ZIQT09"><strong>Zoom link for poster</strong></a>.-->
+
+	    <div align="center" style="padding:10px">
+	      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZwgD8xR2_FI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+	  </li>
+	  <li>Weiyu Du, Oleh Rybkin, Lingzhi Zhang, Jianbo Shi. <em>"Toward Continuous-Time Representations of Human Motion".</em> <a href="papers/toward_continuous_time_representations_of_human_motion.pdf"><strong>PDF link</strong></a>. <!--<strong><a href="https://meet.google.com/hme-fzwi-isp">Google meet link for Poster Session 1</a>, <a href="https://meet.google.com/epa-wigy-qnu">Google meet link for Poster Session 2</a></strong>.-->
+	    <div align="center" style="padding:10px">
+	      <iframe width="560" height="315" src="https://www.youtube.com/embed/EAOo-whr0HI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  </div></li>
+	</ul>
+	
+	
+
+	
+	<!--
+	<div class="row slot-dark">
+	  <div class="col-xs-12 col-sm-5">
+	    Title
+	  </div>
+	  <div class="col-xs-12 col-sm-3">
+	    Authors
+	  </div>
+	  <div class="col-xs-12 col-sm-3">
+	    Zoom link for poster session
+	  </div>
+	</div>
+	
+	<div class="row slot">
+	  <div class="col-xs-12 col-sm-5">
+	    You Only Need Adversarial Supervision for Semantic Image Synthesis
+	  </div>
+	  <div class="col-xs-12 col-sm-3">
+	    Vadim Sushko, Edgar Schönfeld, Dan Zhang, Juergen Gall, Bernt Schiele, Anna Khoreva
+	  </div>
+	  <div class="col-xs-12 col-sm-4">
+	    -
+	  </div>
+	</div>
+
+
+	<div class="row slot-colored">
+	  <div class="col-xs-12 col-sm-5">
+	    DisCont: Self-Supervised Visual Attribute Disentanglement using Context Vectors
+	  </div>
+	  <div class="col-xs-12 col-sm-3">
+	    Sarthak Bhagat, Vishaal Udandarao, Shagun Uppal, Saket Anand
+	  </div>
+	  <div class="col-xs-12 col-sm-4">
+	    -
+	  </div>
+	</div>
+
+	<div class="row slot">
+	  <div class="col-xs-12 col-sm-5">
+	    Toward Continuous-Time Representations of Human Motion
+	  </div>
+	  <div class="col-xs-12 col-sm-3">
+	    Weiyu Du, Oleh Rybkin, Lingzhi Zhang, Jianbo Shi
+	  </div>
+	  <div class="col-xs-12 col-sm-4">
+	    -
+	  </div>
+	</div>
+	-->
+	
+      </div>
+    </div>
+
+    
+
+    <hr />
+    <!-- Submission -->
+    <p><a class="anchor" id="submission"></a></p>
+    <div class="row">
+      <div class="col-xs-12">
+	<h2>Call for papers</h2>
+	<p>We are soliciting original contributions in computer vision, robotics, and machine learning relating to the following topics:</p>
+	<ul>
+	  <li>Inverse graphics</li>
+	  <li>Generative models for images, video, 3D data</li>
+	  <li>Reconstruction or prediction as objectives for representation learning</li>
+	  <li>Learning disentangled and/or interpretable representations</li>
+	  <li>Novel methods for structured generative modelling</li>
+	  <li>Generation for prediction, anomaly detection, compression, search, etc.</li>
+	  <li>Managing and leveraging visual stochasticity</li>
+	  <li>Incorporating hierarchy and graphics-like elements into machine learning</li>
+	  <li>Causal and forward models of visual data</li>
+	</ul>
+	<p>Submission deadline: August 20. We encourage authors to submit earlier, anytime between August 1 and August 20, to help us spread out the reviewing work.</p>
+	<p>Submit your paper to our <a href="https://openreview.net/group?id=thecvf.com/ECCV/2020/Workshop/PTSGM">OpenReview site</a>, using the <a href="https://eccv2020.eu/wp-content/uploads/2020/07/ECCV-2020-kit_16.06.2020-1.zip">ECCV 2020 "final copy" latex kit</a>.</p>
+	<p>Submissions should be <strong>4 pages long</strong>, including references. The 4-page limit helps eliminate dual-submission conflicts with ECCV and other conferences. (E.g., even papers accepted to ECCV may be dual-submitted here, provided that they are shortened to 4 pages.)</p>
+	<p>The workshop organizers will review the papers in a single-blind fashion. All accepted papers will be included in a poster presentation session. Accepted papers will be published in the proceedings.</p>
+      </div>
+    </div>
+    <hr />
+
+
+    <!-- Schedule -->
+    <p><a class="anchor" id="schedule"></a></p>
+    <div class="row">
+      <div class="col-xs-12">
+	<h2>Program schedule</h2>
+      </div>
+    </div>
+    
+    <p><h3>Morning/afternoon session</h3></p>
+    
+    <div class="row slot-dark">
+      <div class="col-xs-12 col-sm-5">
+	Time
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Speaker
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Topic
+      </div>
+    </div>
+    <div class="row slot">
+      <div class="col-xs-12 col-sm-5">
+	09:00 Pittsburgh (EST) / 14:00 London (UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Max Welling
+      </div>
+      <div class="col-xs-12 col-sm-4">
+	Combining Generative and Discriminative Models
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+
+    <div class="row slot-colored">
+      <div class="col-xs-12 col-sm-5">
+	09:40 Pittsburgh (EST) / 14:40 London (UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	J. Kevin O'Regan
+      </div>
+      <div class="col-xs-12 col-sm-4">
+	Thinking about vision in a different way: the world as an outside memory
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+    
+    <div class="row slot">
+      <div class="col-xs-12 col-sm-5">
+	10:20 Pittsburgh (EST) / 15:20 London UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Peter Battaglia
+      </div>
+      <div class="col-xs-12 col-sm-4">
+	Structured understanding and interaction with the world
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+    
+    <div class="row slot-colored">
+      <div class="col-xs-12 col-sm-5">
+	11:00 Pittsburgh (EST) / 16:00 London UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-7">
+	Poster session 1
+	<!-- <p>You Only Need Adversarial Supervision for Semantic Image Synthesis<p> -->
+	<!-- <p>DisCont: Self-Supervised Visual Attribute Disentanglement using Context Vectors</p> -->
+	<!-- <p>Toward Continuous-Time Representations of Human Motion</p> -->
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+
+    </br>
+    <p><h3>Afternoon/evening session</h3></p>
+    <div class="row slot-dark">
+      <div class="col-xs-12 col-sm-5">
+	Time
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Speaker
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Topic
+      </div>
+    </div>
+    
+    <div class="row slot">
+      <div class="col-xs-12 col-sm-5">
+	17:00 Pittsburgh (EST) / 22:00 London (UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Sanja Fidler
+      </div>
+      <div class="col-xs-12 col-sm-4">
+	AI for 3D Content Generation
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+
+    <div class="row slot-colored">
+      <div class="col-xs-12 col-sm-5">
+	17:40 Pittsburgh (EST) / 22:40 London (UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Ruslan Salakhutdinov
+      </div>
+      <div class="col-xs-12 col-sm-4">
+	Geometric Capsule Autoencoders for 3D Point Clouds
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+    
+    <div class="row slot">
+      <div class="col-xs-12 col-sm-5">
+	18:20 Pittsburgh (EST) / 23:20 London (UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-3">
+	Carl Vondrick
+      </div>
+      <div class="col-xs-12 col-sm-4">
+	Data and Task Generalization
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+    
+    <div class="row slot-colored">
+      <div class="col-xs-12 col-sm-5">
+	19:00 Pittsburgh (EST) / 00:00 London UTC+1)
+      </div>
+      <div class="col-xs-12 col-sm-7">
+	Poster session 2
+      </div>
+      <!-- <div class="col-xs-12 col-sm-2"> -->
+      <!-- </div> -->
+    </div>
+    
+    <br />
+    <strong>Access the zoom links through the <a href="https://eccv.6connex.eu/event/ECCV2020/en-us?shared=true#!/workshops/n31341/c15919">ECCV virtual platform</a>.</strong>
+
+    
+
+
+    <hr />
+    <!-- Organizers -->
+    <p><a class="anchor" id="organizers"></a></p>
+    <div class="row">
+      <div class="col-xs-12">
+	<h2>Organizers</h2>
+	<div>
+	  <div class="instructor">
+	    <a href="http://cs.cmu.edu/~aharley/">
+	      <div class="instructorphoto"><img src="images/harley.jpg"></div>
+	      <div>Adam Harley</div>
+	    </a>
+	    <div class="instructor-institute">Carnegie Mellon University</div>
+	  </div>
+	  <div class="instructor">
+	    <a href="http://shubhtuls.github.io/">
+	      <div class="instructorphoto"><img src="images/tulsiani.jpg"></div>
+	      <div>Shubham Tulsiani</div>
+	    </a>
+	    <div class="instructor-institute">FAIR</div>
+	  </div>
+	  <div class="instructor">
+	    <a href="http://cs.cmu.edu/~katef">
+	      <div class="instructorphoto"><img src="images/fragkiadaki.jpg"></div>
+	      <div>Katerina Fragkiadaki</div>
+	    </a>
+	    <div class="instructor-institute">Carnegie Mellon University</div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <hr />
+
+    <p>Contact: Adam Harley (aharley@cmu.edu).</p>
+    <p>Website theme based on <a href="https://cs.stanford.edu/people/ranjaykrishna/sgrl/index.html">Scene Graph Representation and Learning</a>.</p>
+  </div>
+</div>
+
+
+<!-- jQuery and Boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
